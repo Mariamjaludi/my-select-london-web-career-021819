@@ -5,8 +5,10 @@ def my_select(collection)
  result = []
 
  while i < collection.length
-   x = yield collection[i]
-   if x == true
+   result[i] = yield collection[i]
+   if result[i] == false
+     result.shift
+   else
      result[i] = collection[i]
    end
    i += 1
