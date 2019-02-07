@@ -5,14 +5,11 @@ def my_select(collection)
  result = []
 
  while i < collection.length
-   result[i] = yield collection[i]
-   if result[i] == false
-     result.shift
-   else
+    x = yield collection[i]
+   if x == true
      result[i] = collection[i]
    end
    i += 1
  end
-
    result
 end
