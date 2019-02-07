@@ -11,5 +11,6 @@ def my_select(collection)
    end
    i += 1
  end
-   result
+  result.delete(nil)
+  result
 end
