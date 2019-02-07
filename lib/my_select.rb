@@ -8,8 +8,8 @@ def my_select(collection)
     x = yield collection[i]
    if x == true
      result[i] = collection[i]
+     i += 1
    end
-   i += 1
  end
   result.delete(nil)
   result
