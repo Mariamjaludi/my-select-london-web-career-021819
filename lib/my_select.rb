@@ -5,13 +5,9 @@ def my_select(collection)
  result = []
 
  while i < collection.length
-   result[j] = yield collection[i]
-   if result[i] == true
-     i += 1
-     j += 1
-   else
-     i += 1
-   end
+   result[i] = yield collection[i]
+   i += 1
+
  end
 
    result
