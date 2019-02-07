@@ -7,9 +7,10 @@ def my_select(collection)
  while i < collection.length
     x = yield collection[i]
    if x == true
-     result[i] = collection[i]
-     i += 1
+     result[j] = collection[i]
+     j += 1
    end
+   i += 1
  end
   result.delete(nil)
   result
